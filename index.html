@@ -20,147 +20,29 @@
         <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
             <div class="position-sticky text-center pt-5">
 
-                <img src="https://via.placeholder.com/150"
+                <img src="./resources/images/profile_pic.png"
                      class="profile-img mb-4"
                      alt="Profile">
 
                 <h4 class="text-white">Jayanta Ramanatha</h4>
 
                 <ul class="nav flex-column mt-4">
-                    <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#downloads">Downloads</a></li>
+                    <li class="nav-item"><a class="nav-link" data-page="about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" data-page="experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" data-page="education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" data-page="projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" data-page="skills">Skills</a></li>
+<!--                    <li class="nav-item"><a class="nav-link" data-page="downloads">Download</a></li>-->
+                    <li class="nav-item"><a class="nav-link" data-page="contact">Contact Me</a></li>
                 </ul>
 
             </div>
         </nav>
 
-        <!-- Main Content -->
+        <!-- Dynamic Content Area -->
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-5 content">
-
-            <section id="about" class="section">
-                <div class="section-content">
-                    <h1>Jayanta <span class="highlight">Ramanatha</span></h1>
-                    <p class="contact">
-                        Bengaluru, India · hrjayanth@gmail.com · +91-XXXXXXXXXX
-                    </p>
-
-                    <p class="lead">
-                        Full-Stack Developer with 13+ years of experience designing scalable,
-                        event-driven systems using Java, Spring Boot, Angular, and Kubernetes.
-                    </p>
-
-                    <div class="social-icons mt-4">
-                        <a href="https://www.linkedin.com/in/jayanta-ramanatha-a6245846/"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://github.com/hrjayanth"><i class="bi bi-github"></i></a>
-                    </div>
-                </div>
-            </section>
-
-            <section id="experience" class="section">
-                <h2>Experience</h2>
-
-                <div class="timeline">
-
-                    <div class="timeline-item reveal">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">2022 – Present</span>
-                            <h4>Senior Software Engineer</h4>
-                            <h6>Company Name</h6>
-                            <p>
-                                Designed and implemented high-throughput queue processing systems
-                                using Spring Boot and IBM MQ. Enabled auto-scaling with KEDA
-                                based on queue depth metrics.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item reveal">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">2018 – 2022</span>
-                            <h4>Lead Developer</h4>
-                            <h6>Company Name</h6>
-                            <p>
-                                Architected cloud-native microservices deployed on Kubernetes.
-                                Implemented observability dashboards using Prometheus and Grafana.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item reveal">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">2013 – 2018</span>
-                            <h4>Software Engineer</h4>
-                            <h6>Company Name</h6>
-                            <p>
-                                Built enterprise applications using Java and Angular.
-                                Optimized JVM performance and database interactions.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <section id="education" class="section">
-                <h2>Education</h2>
-                <div class="timeline">
-
-                    <div class="timeline-item reveal">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">2021 – 2023</span>
-                            <h4>MTech in Software Engineering</h4>
-                            <h6>Birla Institute of Technology and Science</h6>
-                            <p>
-                                TODO
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item reveal">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">2007 – 2011</span>
-                            <h4>BE in Information Science and Engineering</h4>
-                            <h6>Visveswaraya Technological University</h6>
-                            <p>
-                                TODO
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="skills" class="section">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Java 21 / Spring Boot / WebFlux</li>
-                    <li>Angular / RxJS / Tailwind</li>
-                    <li>Kubernetes / KEDA</li>
-                    <li>Prometheus / Grafana / Loki</li>
-                </ul>
-            </section>
-
-            <section id="projects" class="section">
-                <h2>Projects</h2>
-                <p>High Volume Queue Processor, Cloud-Native Password Manager, Observability Dashboard.</p>
-            </section>
-
-            <section id="downloads" class="section">
-                <h2>Downloads</h2>
-                <p>Resume</p>
-                <p>Cover Letter</p>
-            </section>
-
+            <div id="content"></div>
         </main>
-
     </div>
 </div>
 

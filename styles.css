@@ -108,6 +108,7 @@ h1 {
 .timeline-item {
     position: relative;
     margin-bottom: 50px;
+    transition-delay: 0.2s;
 }
 
 .timeline-dot {
@@ -128,6 +129,7 @@ h1 {
     font-size: 0.9rem;
     font-weight: 600;
     color: #c06038;
+    float: right;
 }
 
 .timeline-content h4 {
@@ -152,4 +154,303 @@ h1 {
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+#content {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#content.loaded {
+    opacity: 1;
+}
+
+/* ===== Contact Page ===== */
+
+.contact-form input,
+.contact-form textarea {
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #c06038;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #c06038;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+.btn-primary:hover {
+    background-color: #a64f2e;
+}
+
+/* ===== Skills Section - Architect Layout ===== */
+
+.skill-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.skill-card h4 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #c06038;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tags span {
+    background-color: #f4f4f4;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.skill-tags span:hover {
+    background-color: #c06038;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* EXPERIENCE SECTION */
+.experience-section {
+    padding: 80px 0;
+    background: #f9f9f9;
+}
+
+.experience-container {
+    width: 85%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.experience-intro {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 50px;
+}
+
+/* TIMELINE STRUCTURE */
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    border-left: 2px solid #e0e0e0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -11px;
+    top: 10px;
+    width: 18px;
+    height: 18px;
+    background: #c25d3c;
+    border-radius: 50%;
+}
+
+/* CARD STYLE */
+.timeline-card {
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.timeline-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* HEADER */
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.timeline-header h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.company {
+    font-size: 14px;
+    color: #777;
+}
+
+.timeline-date {
+    font-size: 14px;
+    color: #c25d3c;
+    font-weight: 500;
+}
+
+/* ROLE SUMMARY */
+.role-summary {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+/* LIST STYLING */
+.timeline-card ul {
+    padding-left: 18px;
+}
+
+.timeline-card ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .timeline-header {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .timeline-marker {
+        left: -10px;
+    }
+}
+
+/* ============================= */
+/* ABOUT SECTION STYLING */
+/* ============================= */
+
+.about-section {
+    padding: 100px 0;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(194, 93, 60, 0.08), transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(0, 0, 0, 0.04), transparent 40%),
+        #f5f6f8;
+}
+
+.about-container {
+    max-width: 950px;
+    margin: auto;
+}
+
+/* Hero Statement */
+.about-hero h3 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.accent {
+    color: #c25d3c;
+}
+
+/* Content */
+.about-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Pillars Section */
+.about-pillars {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.pillar {
+    flex: 1;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.pillar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.pillar h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #c25d3c;
+}
+
+.pillar p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-pillars {
+        flex-direction: column;
+    }
+}
+
+/* ============================= */
+/* TECH STACK BADGES */
+/* ============================= */
+
+.tech-stack {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-stack span {
+    background: rgba(194, 93, 60, 0.08);
+    color: #c25d3c;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
 }
